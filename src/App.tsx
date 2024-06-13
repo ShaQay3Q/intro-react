@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Button } from "./button-component";
 
 function App() {
 
@@ -15,20 +16,22 @@ function App() {
       }
   }
 
-  // function increment(){
-  //   setState(state + 1)
-  // }
+  function increment(){
+    setState(state + 1)
+  }
 
   return ( 
     <div>
-      <button
+      {/* <button
             onClick={deecrement}
-            >-</button>
+            >-</button> */}
+      <Button onClick={deecrement}>-</Button>
       <span style={{paddingInline: "10px", fontSize:"18px"}}>{state}</span>
-      <button
+      <Button onClick={increment}>+</Button>
+      {/* <button
       // callback function = set state
             onClick={() => setState(state + 1)}
-            >+</button>
+            >+</button> */}
     </div>
   )
 }
