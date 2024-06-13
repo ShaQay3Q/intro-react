@@ -22,6 +22,8 @@ function App() {
     setState(state + 1)
   }
 
+  const animals = ["elephant", "zebra", "goat", "bear", "chicken"]
+
   return ( 
     <div>
       {/* <button
@@ -36,7 +38,7 @@ function App() {
             >+</button> */}
       <Counter/>
       <h2>List Example</h2>
-      <List />
+      <List list={animals}/>
     </div>
   )
 }
