@@ -5,7 +5,7 @@ type Props = {
 export function List({list}: Props){
     return (
         <ul>
-            {list.map(element => <li>{element}</li>)}
+            {list.map(element => <li key={element}>{element}</li>)}
         </ul>
     )
 }
