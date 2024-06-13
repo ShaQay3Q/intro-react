@@ -1,5 +1,7 @@
 import { useState } from "react"
-import { Button } from "./button-component";
+import { Button } from "./components/button-component";
+import { Counter } from "./components/counter";
+import {List} from "./components/list"
 
 function App() {
 
@@ -32,6 +34,9 @@ function App() {
       // callback function = set state
             onClick={() => setState(state + 1)}
             >+</button> */}
+      <Counter/>
+      <h2>List Example</h2>
+      <List />
     </div>
   )
 }
